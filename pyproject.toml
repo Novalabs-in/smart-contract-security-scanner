@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-contract-security-scanner"
+version = "1.0.0"
+description = "Static analysis vulnerability scanner for Solidity smart contracts detecting reentrancy, overflows, and gas waste."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pytest>=7.0.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
